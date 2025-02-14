@@ -6,37 +6,136 @@
     <title>Bem Vindo Jovem Guerreiro</title>
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-</head>
-<body class="bg-dark text-light d-flex justify-content-center align-items-center vh-100 telainicial">
-    <div class="container text-center">
+    <style>
+        
+        .section1 {  
+        background: linear-gradient(rgba(3, 8, 13, 0.80), rgba(3, 8, 13, 1) 80%), url("imgs/startpage.jpg");
+        background-size: cover;
+        background-position: 50% 90%;
+        background-repeat: no-repeat;
+        min-height: 100vh; 
+     }
+     
+     .section3 {  
+        background: linear-gradient(rgba(3, 8, 13, 0.80), rgba(3, 8, 13, 1) 80%), url("imgs/startpage.jpg");
+        background-size: cover;
+        background-position: 50% 90%;
+        background-repeat: no-repeat;
+        min-height: 100vh; 
+     }
 
-        <div class=" d-flex justify-content-center  ">
-            <h1 class=" titulo-principal d-flex align-items-center  "><!-- Logo esquerda -->
-                <img src="imgs/logo.png" alt="Logo Esquerda" class="logo" style="height: 60px; width: auto;">
-                <span>BEM VINDO JOVEM GUERREIRO</span><!-- Logo direita -->
-                <img src="imgs/logo.png" alt="Logo Direita" class="logo" style="height: 60px; width: auto;">
+    </style>
+</head>
+<body>
+    <section>
+        <div class="text-light d-flex flex-column justify-content-between align-items-center section1">
+            <div class=" d-flex justify-content-center align-items-center titulo-img ">
+                <h1 class="text-center"><!-- Logo -->
+                    <span>OLÁ, JOVEM GUERREIRO!</span>
+                </h1>
+            </div>
+            <div class="text-center">
+                <!-- Texto Motivacional -->
+                <img src="imgs/logo.png" alt="Logo" class="logo">
+                <div class="texto-inicio">
+                    <p class="">O despertador toca cedo, mas o corpo pesa como se carregasse o cansaço de anos.</p>
+                    <p class="">O dia começa numa corrida contra o relógio—trabalho, estudo, contas para pagar...</p>
+                    <p class="destaque">Você não está sozinho. Essa é a NOSSA ZONA DE GUERRA:</p> 
+                    <p class="">A batalha pela realização dos seus sonhos, enquanto enfrenta os desafios da vida adulta.</p>
+                </div>
+            </div>
+            <div class="text-center">
+                <!-- Botões personalizados -->
+                <div class="d-flex flex-column align-items-center">
+                    <a href="zonadeguerra.html" class="botaosobreaguerra btn  p-2 m-1 w-100">+ SOBRE A GUERRA</a>
+                </div>
+            </div>
+            <!-- Mensagem Final -->
+            <p class="mb-4 text-center text-light">Não é sobre se cobrar mais, <br> É sobre evoluir com inteligência</p>
+        </div>
+    </section>
+
+<section>
+    <div class="text-light section2">
+        <div class="text-center d-flex flex-column justify-content-between align-items-center">
+            <div class=" d-flex flex-column  align-items-center titulo">
+                <img src="imgs/logo.png" alt="Logo" class="logo">
+                <h1 class="text-center">
+                    
+                    <span>COMO VENCER A GUERRA?</span>
+                </h1>
+            </div>
+        
+            <div class="texto-inicio">
+                <p class="">Acordar cedo é apenas o começo. E depois, o que fazer com toda a pressão que você sente ao longo do dia?</p>
+                <p class="">Trabalho, estudos, compromissos pessoais… A sensação de que o tempo está sempre contra você é real. Mas como vencer esses desafios?</p>
+                <p class="destaque">A resposta está em aprender a lutar com inteligência, a priorizar o que realmente importa e a evoluir a cada passo. </p>
+                <p class="">A verdadeira vitória está em conquistar seus objetivos sem se perder no processo.</p>
+            </div>
+        </div>
+
+       
+    </div>
+</section>
+
+<section>
+    <div class="text-light d-flex flex-column justify-content-between align-items-center section3">
+        <div class=" d-flex flex-column  align-items-center titulo">
+            <img src="imgs/logo.png" alt="Logo" class="logo">
+            <h1 class="text-center">
+                <span>SIGA O MAPA</span>
             </h1>
         </div>
-
-        <!-- Texto Motivacional -->
-        <div class="texto-inicio">
-        <p class="mt-4 destaque">A pressão do trabalho, a ansiedade, a falta de tempo...<br>Tudo isso faz parte da guerra.</p>
-        <p class="mt-4 destaque ">Mas ACREDITE, VOCÊ PODE VENCER!</p>
-        </div>
-        <!-- Lista de passos -->
-        <p ><span class="destaque">1</span> - CONHEÇA <span class="destaque">“A ZONA DE GUERRA”</span></p>
-        <p ><span class="destaque">2</span> - ACESSE <span class="destaque">“O MAPA DO GUERREIRO”</span></p>
-
-        <!-- Botões personalizados -->
-        <div class="botoes d-flex justify-content-center flex-column align-items-center">
-            <a href="zonadeguerra.html" class="botaozona btn btn-warning p-2 m-1 w-50">A ZONA DE GUERRA<br>(CONHEÇA ANTES)</a>
-            <a href="#" class="botaomapa btn btn-light p-2 m-1 w-50">O MAPA DO GUERREIRO<br>(APRENDA E APLIQUE)</a>
-        </div>
-
-        <!-- Mensagem Final -->
-        <p class="mt-4  destaque">Não é sobre se cobrar mais, <br> É sobre evoluir com inteligência</p>
+        
+            <div class="text-center texto-motivacional">
+                <p class="destaque">Cada passo conta. A jornada pode ser difícil, mas a evolução acontece quando você persiste.</p>
+            </div>
+            <!-- Quatro caixas lado a lado -->
+            <!-- Botão voltar ao topo -->
+            <div class="text-center">
+                <!-- Botões personalizados -->
+                <div class="d-flex flex-column align-items-center">
+                    <a href="zonadeguerra.html" class="botaosobreaguerra btn  p-2 m-1 w-100">VOLTAR AO TOPO</a>
+                </div>
+            </div>
+       
     </div>
+</section>
 
-    <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+<script>
+    let currentSection = 0;
+    const sections = document.querySelectorAll("section");
+    let isScrolling = false;
+    let scrollTimeout;
+
+    function scrollToSection(index) {
+        if (index >= 0 && index < sections.length) {
+            sections[index].scrollIntoView({ behavior: "smooth" });
+            currentSection = index;
+            isScrolling = true;
+
+            setTimeout(() => {
+                isScrolling = false;
+            }, 500);
+        }
+    }
+
+    document.addEventListener("wheel", (event) => {
+        if (isScrolling) return;
+
+        clearTimeout(scrollTimeout); // Limpa o timeout anterior
+
+        scrollTimeout = setTimeout(() => {
+            if (event.deltaY > 0) {
+                scrollToSection(currentSection + 1); // Scroll para baixo
+            } else {
+                scrollToSection(currentSection - 1); // Scroll para cima
+            }
+        }, 100); // Aguarda 100ms antes de processar o scroll
+    });
+</script>
+
+<script src="bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

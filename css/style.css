@@ -1,112 +1,96 @@
-/* Reset básico do CSS */
-* {
-
-    box-sizing: border-box;
-}
-
-/* Define a fonte padrão do site */
-/* Incluindo a fonte IBM Plex Sans */
+/* Importando fonte antes de qualquer regra */
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600&display=swap');
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Configuração do HTML e do Body */
 html, body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        font-family: 'IBM Plex Sans', sans-serif;
-}
-.telainicial {
-        background: linear-gradient(rgba(6, 15, 23, 0.85), rgba(0, 0, 0, 0.9) 100%), url("../imgs/startpage.jpg");
-        background-size: cover;
-        background-position: 50% 90%;
-        background-repeat: no-repeat;
-        min-height: 100vh; 
+    font-family: 'IBM Plex Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    overflow:auto;
+    /* Evita barra de rolagem manual */
 }
 
-.zonadeguerra1 {
-    background: linear-gradient(rgba(6, 15, 23, 0.85), rgba(0, 0, 0, 0.9) 100%), url("../imgs/warzone.jpg");
-    background-size: cover;
-    background-position: 50% 90%;
-    background-repeat: no-repeat;
-    min-height: 100vh; 
-}
-.zonadeguerra2 {
-    background: rgba(6, 15, 23,0.95);
-    background-size: cover;
-    background-position: 50% 90%;
-    background-repeat: no-repeat;
-    min-height: 100vh; 
-}
-.zonadeguerra3 {
-    background: rgba(6, 15, 23,0.95);
-    background-size: cover;
-    background-position: 50% 90%;
-    background-repeat: no-repeat;
-    min-height: 100vh; 
-}
-.zonadeguerra4 {
-    background: linear-gradient(rgba(6, 15, 23, 0.85), rgba(0, 0, 0, 0.9) 100%), url("../imgs/warzone.jpg");
-    background-size: cover;
-    background-position: 50% 90%;
-    background-repeat: no-repeat;
-    min-height: 100vh; 
+section {
+    font-size: 1.5rem;
+    height: 100vh; /* Cada seção ocupa 100% da tela */
+    transition: transform 0.5s ease-in-out;   
 }
 
-
-/* 🔹 Fundo arredondado preto com transparência no título principal */
-.titulo-principal {
-    background-color: rgba(0, 0, 0, 0.9); /* Preto com 80% de transparência */
+h1{
     color: #FFD691;
     font-weight: 600;
-    font-size: x-large;
-    border-radius: 15px;
-    padding: 10px 40px; /* Espaçamento interno */
-    margin: 20px; /* Espaçamento externo nas laterais */
+}
+P{
+    font-size: 1.30rem;
+}
+section, p , h1{
+    margin: 0;
+    padding: 0;
+    color: white;
+
+}
+.section1, .section2, .section3,.section4,.section5 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+}
+.section2, .section4,.section6{  
+    background: linear-gradient(rgba(3, 8, 13, 1), rgba(3, 8, 13, 0.95) 80%);
+    background-size: cover;
+    background-position: 50% 90%;
+    background-repeat: no-repeat;
+    min-height: 100vh; 
+ }
+.logo{
+    height: 6.5rem; width: auto;}
+/**************-------------***************/
+/**************TELA INICIAL***************/
+/**************-------------***************/
+
+/* Fundo arredondado preto com transparência no título principal */
+.titulo-img {
+    background-color: rgba(0, 0, 0, 0.5); /* Preto com 90% de transparência */
+    padding: 1.5rem; 
+    width: 100%;
+}
+.titulo {
+    padding: 1.5rem; 
+    width: 100%;
 }
 
 .texto-inicio{
     color:#FFD691 ;
     font-weight: 400;
-    font-size:medium;
 }
 /* 🔹 Destaque para textos importantes */
 .destaque {
     color: #FFD691;
     font-weight: 500;
-    font-size:medium;
-}
 
+}
 .botaozona {
     color: rgba(0, 0, 0, 0.9);
-    min-width: 200px;  /* Largura mínima */
-    max-width: 400px;  /* Largura máxima */
+    min-width: 20vw;  /* Largura mínima */
+    max-width: 80vw;   /* Largura máxima */
     font-size: 1.2rem; /* Ajuste do tamanho do texto */
     font-weight: 600;
-    padding: 12px 20px; /* Espaçamento interno maior */
+    padding: 0.2em 4vw; /* Espaçamento interno maior */
 }
-.botaomapa {
+.botaosobreaguerra {
     color: rgba(0, 0, 0, 0.9);
     background-color: #FFD691;
-    min-width: 200px;  /* Largura mínima */
-    max-width: 400px;  /* Largura máxima */
+    min-width: 20vw;  /* Largura mínima */
+    max-width: 80vw;  /* Largura máxima */
     font-size: 1.2rem; /* Ajuste do tamanho do texto */
     font-weight: 600;
-    padding: 12px 20px; /* Espaçamento interno maior */
+    padding: 0.2em 4vw; 
 }
 
-.container-scroll {
-    height: 100vh;
-    width: 100%;
-    overflow-y: auto;
-    scroll-snap-type: y mandatory;
-}
-section {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    scroll-snap-align: start;
-    text-align: center;
-    padding: 20px;
-}
