@@ -20,20 +20,23 @@ html, body {
 section {
     font-size: 1.5rem;
     height: 100vh; /* Cada seção ocupa 100% da tela */
-    transition: transform 0.5s ease-in-out;   
+    transition: transform 0.5s ease-in-out; 
+    overflow: inherit;  
+    color: white;
 }
 
 h1{
     color: #FFD691;
     font-weight: 600;
 }
-P{
+
+p, strong{
     font-size: 1.30rem;
 }
 section, p , h1{
     margin: 0;
     padding: 0;
-    color: white;
+    
 
 }
 .section1, .section2, .section3,.section4,.section5 {
@@ -43,7 +46,7 @@ section, p , h1{
     align-items: center;
 }
 .section2, .section4,.section6{  
-    background: linear-gradient(rgba(3, 8, 13, 1), rgba(3, 8, 13, 0.95) 80%);
+    background: linear-gradient(rgba(3, 8, 13, 1), rgba(3, 8, 13, 0.95),rgba(3, 8, 13, 1) 80%);
     background-size: cover;
     background-position: 50% 90%;
     background-repeat: no-repeat;
@@ -62,18 +65,19 @@ section, p , h1{
     width: 100%;
 }
 .titulo {
-    padding: 1.5rem; 
+    margin-bottom: 1.5rem;
     width: 100%;
 }
 
-.texto-inicio{
-    color:#FFD691 ;
-    font-weight: 400;
-}
 /* 🔹 Destaque para textos importantes */
 .destaque {
     color: #FFD691;
-    font-weight: 500;
+
+}
+.destaque-bold {
+    color: #fdb02c;
+    font-weight: 600;
+    font-size: 1.25rem;
 
 }
 .botaozona {
@@ -92,5 +96,55 @@ section, p , h1{
     font-size: 1.2rem; /* Ajuste do tamanho do texto */
     font-weight: 600;
     padding: 0.2em 4vw; 
+}
+
+.botaofases {
+    color: rgba(0, 0, 0, 0.9);
+    background-color: #fdb02c;
+    font-size: 1.1rem; /* Ajuste do tamanho do texto */
+    font-weight: 600;
+
+}
+
+.custom-card {
+    min-height: 300px; /* Ajuste a altura conforme necessário */
+    border: 5px solid #fdb02c; /* Borda personalizada */
+    border-radius: 15%;
+     /* Para posicionar o conteúdo sobre a imagem */
+    color: white; /* Cor do texto para contrastar com a imagem */
+    
+}
+#card-fase1 {
+    background: linear-gradient(rgba(3, 8, 13, 0.85), rgba(3, 8, 13, 0.99) 80%), url("../imgs/autoconhecimento.jpg"); /* Imagem de fundo */
+    background-size: cover; /* Cobrir todo o card */
+    background-position: center; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Evitar repetição */
+    position: relative;}
+
+#card-fase2 {
+    background: linear-gradient(rgba(3, 8, 13, 0.85), rgba(3, 8, 13, 0.99) 80%), url("../imgs/planejamento.jpg"); /* Imagem de fundo */
+    background-size: cover; /* Cobrir todo o card */
+    background-position: center; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Evitar repetição */
+    position: relative;}
+#card-fase3 {
+    background: linear-gradient(rgba(3, 8, 13, 0.85), rgba(3, 8, 13, 0.99) 80%), url("../imgs/tempo.jpg"); /* Imagem de fundo */
+    background-size: cover; /* Cobrir todo o card */
+    background-position: center; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Evitar repetição */
+    position: relative;}
+#card-fase4 {
+    background: linear-gradient(rgba(3, 8, 13, 0.85), rgba(3, 8, 13, 0.99) 80%), url("../imgs/acao.jpg"); /* Imagem de fundo */
+    background-size: cover; /* Cobrir todo o card */
+    background-position: center; /* Centralizar a imagem */
+    background-repeat: no-repeat; /* Evitar repetição */
+    position: relative;}
+    
+
+.custom-card h3,
+.custom-card .destaque-bold,
+.custom-card .botaofases {
+    position: relative; /* Garantir que o texto fique sobre a imagem */
+    z-index: 2; /* Trazer o conteúdo para frente */
 }
 
