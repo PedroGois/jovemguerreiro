@@ -8,92 +8,132 @@
     <link rel="stylesheet" href="css/style.css">
     <style>
         
-        .section1 {  
-        background: linear-gradient(rgba(3, 8, 13, 0.90), rgba(3, 8, 13, 1) 80%), url("imgs/startpage.jpg");
+    .section1 {  
+        background: linear-gradient(rgba(3, 8, 13, 1),rgba(3, 8, 13, 0.85), rgba(3, 8, 13, 1) 90%), url("imgs/startpage.jpg");
+        background-size: cover;
+        background-position: 50% 90%;
+        background-repeat: no-repeat;
+        min-height: 100vh; 
+     }
+     .section2 {  
+        background: linear-gradient(rgba(3, 8, 13, 1),rgba(3, 8, 13, 0.85), rgba(3, 8, 13, 1) 90%), url("imgs/AGUERRA2.jpg");
         background-size: cover;
         background-position: 50% 90%;
         background-repeat: no-repeat;
         min-height: 100vh; 
      }
      
+     
      .section3 {  
-        background: linear-gradient(rgba(3, 8, 13, 1), rgba(3, 8, 13, 0.9) 80%), url("imgs/startpage.jpg");
+        background: linear-gradient(rgba(3, 8, 13, 1),rgba(3, 8, 13, 0.85), rgba(3, 8, 13, 1) 90%), url("imgs/OPLANO.jpg");
         background-size: cover;
         background-position: 50% 90%;
         background-repeat: no-repeat;
-        min-height: 100vh; 
+        min-height: 100vh;
+     }
+     .section4 {  
+        background: linear-gradient(rgba(3, 8, 13, 1),rgba(3, 8, 13, 0.85), rgba(3, 8, 13, 1) 85%), url("imgs/MAPA.jpg");
+        background-size: cover;
+        background-position: 50% 90%;
+        background-repeat: no-repeat;
+        min-height: 100vh;
      }
 
     </style>
 </head>
 <body>
-    <section>
+    <section id="section1">
         <div class="text-light d-flex flex-column justify-content-between align-items-center section1">
-            <div class=" d-flex justify-content-center align-items-center titulo-img ">
-                <h1 class="text-center"><!-- Logo -->
+            <div class="d-flex justify-content-center align-items-center titulo-img">
+                <h1 class="text-center">
                     <span>OLÁ, JOVEM GUERREIRO!</span>
                 </h1>
             </div>
             <img src="imgs/logo.png" alt="Logo" class="logo">
             <div class="text-center">
-                <strong>O dia começa numa corrida contra o relógio : </strong>
-                <p class="">O despertador toca, e o corpo pesa como se carregasse o cansaço de anos.</p>
-                <p class="destaque">Ansiedade não te deixa pensar...Distrações tentam roubar sua atenção a todo momento...<br> 
-                    A sensação de estar sempre atrasado para a própria vida ... </p>
+                <p>Quando a ansiedade toma conta, as dúvidas sobre o futuro não param de gritar na sua cabeça e quando a gente se pergunta:</p>
+                <strong>"Será que estou no caminho certo?"</strong>
             </div>
-  
             <div class="text-center">
-                <p class="">E a dúvida ecoando na mente : </p>
-                <p class="destaque">Será que estou no caminho certo? </p>    
+                <p class="destaque">Ansiedade não te deixa pensar... Distrações tentam roubar sua atenção a todo momento...<br>
+                    A sensação de estar sempre atrasado para a própria vida...</p>
             </div>
-
             <div class="text-center">
-                <p class="destaque">Trabalho, estudo, contas, responsabilidades que nunca tem fim!</p>
-                <p class="">No meio desse caos, grita o desejo de vencer, de ser livre e viver bem...</p>
+                <p class="destaque">QUERO TE AJUDAR A VENCER ESSA GUERRA</p>
             </div>
-            <p class="destaque-bold">Mas você não está sozinho...Bem vindo à GUERRA</p> 
-            <div class="text-center mb-4">
-                <!-- Botões personalizados -->
+            <div class="text-center mb-2">
                 <div class="d-flex flex-column align-items-center">
-                    <a href="zonadeguerra.html" class="botaosobreaguerra btn  p-2 m-2 ">+ SOBRE A GUERRA</a>
+                    <a href="#section2" class="botaosobreaguerra btn p-2 m-2">A GUERRA</a>
                 </div>
             </div>
+        </div>
+    </section>
+    
+    <section id="section2">
+        <div class="text-light text-center d-flex flex-column justify-content-between align-items-center section2">
+            <div class="d-flex flex-column align-items-center titulo mt-2">
+                <img src="imgs/logo.png" alt="Logo" class="logo">
+                <h1 class="text-center titulo">
+                    <span>A GUERRA</span>
+                </h1>
+            </div>
+            <div>
+                <p>A batalha acontece dentro de nós, muitas vezes sem que ninguém perceba.</p>
+                <br>
+                <p class="destaque">Tenta se concentrar, mas parece que tudo te distrai.</p>
+                <p class="destaque">Trabalho, contas, estudos e as responsabilidades sem fim.</p>
+                <p class="destaque">Você quer fazer algo, mas nunca faz.</p>
+                <p class="destaque"><strong>A sensação de correr sem parar, e nunca chegar.</strong></p>
+                <br>
+                <p><strong>ISSO É A GUERRA!</strong></p>
+                <p>E quando percebe, já se passaram <strong>horas, dias, meses...</strong></p>
+                <p>TIC......TAC......TIC...</p>
+                <br>
+                <p class="destaque">Mas no meio desse turbilhão, tem algo que não se apaga...</p>
+                <p>Uma vontade de vencer, de encontrar um sentido na vida e viver bem.</p>
+                <p><strong>ESSA VONTADE PURA PROVA QUE VOCÊ AINDA TEM FORÇA.</strong></p>
+            </div>
+            <div class="text-center mb-2">
+                <div class="d-flex flex-column align-items-center">
+                    <a href="#section3" class="botaosobreaguerra btn p-2 m-2">O PLANO</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="section3">
+        <div class="text-light text-center d-flex flex-column justify-content-between align-items-center section3">
+            <div class="d-flex flex-column align-items-center titulo mt-2">
+                <img src="imgs/logo.png" alt="Logo" class="logo">
+                <h1 class="text-center titulo">
+                    <span>O PLANO</span>
+                </h1>
+            </div>
+            <div>
+                <p ><strong>Esse PLANO é dividido em 4 FASES</strong></p>
+                <p class="destaque">Cada uma das fases é um passo para você retomar o controle da sua vida, e transformar a guerra em uma jornada de crescimento.</p>
+                <p>No fim dela você já deverá:</p>
+                <ul class="text-left">
+                    <li><p>Se conhecer muito melhor</p></li>
+                    <li><p>Ter sua energia e seu tempo muito melhor aproveitados</p></li>
+                    <li><p>Ter mais confiança para viver</p></li>
+                    <li><p>Ter uma mente muito mais forte</p></li>
+                </ul>
 
+                <p><strong>Essa é sua missão!</strong></p>
+                <p class="destaque">O mapa está aqui, e o primeiro passo é seu.</p>            
+            </div>
+            <div class="text-center mb-2">
+                <!-- Botões personalizados -->
+                <div class="d-flex flex-column align-items-center">
+                    <a href="#section4" class="botaosobreaguerra btn  p-2 m-2 ">O MAPA</a>
+                </div>
+            </div>
         </div>
     </section>
 
-    <section>
-            <div class="text-light text-center d-flex flex-column justify-content-between align-items-center section2 ">
-                <div class="titulo mt-4">
-                    <img src="imgs/logo.png" alt="Logo" class="logo">
-                    <h1 class="text-center titulo">
-                        <span>COMO VENCER A GUERRA?</span>
-                    </h1>
-                </div>
-                <div>
-                    <p>No meio do caos, a vitória é possível, e está ao seu alcance.  </p>
-                    <p>Mas a guerra da vida adulta exige mais do que esforço; exige <strong class="destaque" >direção, estratégia, foco e uma base sólida</strong>.</p>   
-                    <p>Existem <strong class="destaque">4 pilares</strong> que são seu mapa para vencer essa guerra:</p>
-                </div>
-                <div class="text-center d-flex flex-column ">
-                    <p class="destaque"><strong class="text-light">1. Autoconhecimento:</strong>A Chave para Escolhas Inteligentes</p>                         
-                    <p class="destaque"><strong class="text-light" >2. Planejamento Estratégico:</strong>O Caminho Mais Rápido para o Sucesso</p>                        
-                    <p class="destaque"><strong class="text-light" >3. Gestão do Tempo e Energia:</strong>A Arte de Priorizar</p>
-                    <p class="destaque"><strong class="text-light" >3. Gestão do Tempo e Energia:</strong>A Força para Superar Obstáculos</p>
-                </div>
-        
-                <div class="text-center  mb-4 ">
-                    <p >E agora? Como colocar tudo isso em prática?</p>
-                    <p>No <strong class="destaque">mapa detalhado abaixo</strong>, você vai descobrir <strong class="destaque">passo a passo como aplicar esses 4 pilares na sua vida.</strong></p>  
-                    <strong class="destaque-bold">Desça agora e comece a transformar sua vida!</strong>
-                </div>
-                
-            </div>
-    </section>
-
-    <section>
-        <div class="text-light d-flex flex-column justify-content-between align-items-center section3">
-            <div class="d-flex flex-column align-items-center titulo">
+    <section id="section4">
+        <div class="text-light d-flex flex-column justify-content-between align-items-center section4">
+            <div class="d-flex flex-column align-items-center titulo mt-2">
                 <img src="imgs/logo.png" alt="Logo" class="logo">
                 <h1 class="text-center ">
                     <span>SIGA O MAPA</span>
@@ -137,7 +177,7 @@
             
                     <!-- Fase 4 -->
                     <div class="col-md-3 col-sm-6 p-3">
-                        <div class="card custom-card text-center justify-content-between p-3 bg-light h-100" id="card-fase4">
+                        <div class="card custom-card text-center justify-content-between p-3 bg-light vh-100" id="card-fase4">
                             <h3><strong>FASE 4</strong></h3>
                             <p class="destaque-bold">RESILIÊNCIA</p>
                             <div class="d-flex flex-column align-items-center text-center mt-4">
@@ -149,9 +189,9 @@
             </div>
     
             <!-- Botões personalizados -->
-            <div class="text-center mb-4">
+            <div class="text-center mb-2">
                 <div class="d-flex flex-column align-items-center">
-                    <a href="zonadeguerra.html" class="botaosobreaguerra btn p-2 m-1 w-100">VOLTAR AO TOPO</a>
+                    <a href="#section1" class="botaosobreaguerra btn p-2 m-1 w-100">VOLTAR AO TOPO</a>
                 </div>
             </div>
         </div>
