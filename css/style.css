@@ -26,7 +26,7 @@ section {
 }
 
 h1{
-    color: #FFD691;
+    color: #FFC233;
     font-weight: 600;
 }
 
@@ -65,26 +65,20 @@ section, p , h1{
 
 /* 🔹 Destaque para textos importantes */
 .destaque {
-    color: #FFD691;
+    color: #FFC233;
 
 }
 .destaque-bold {
-    color: #fdb02c;
+    color: #FFC233;
     font-weight: 600;
     font-size: 1.25rem;
 
 }
-.botaozona {
-    color: rgba(0, 0, 0, 0.9);
-    min-width: 20vw;  /* Largura mínima */
-    max-width: 80vw;   /* Largura máxima */
-    font-size: 1.2rem; /* Ajuste do tamanho do texto */
-    font-weight: 600;
-    padding: 0.2em 4vw; /* Espaçamento interno maior */
-}
+
 .botaosobreaguerra {
     color: rgba(0, 0, 0, 0.9);
-    background-color: #FFD691;
+    background-color: #FFC233;
+    border: 2px solid white;
     min-width: 20vw;  /* Largura mínima */
     max-width: 80vw;  /* Largura máxima */
     font-size: 1.2rem; /* Ajuste do tamanho do texto */
@@ -94,9 +88,10 @@ section, p , h1{
 
 .botaofases {
     color: rgba(0, 0, 0, 0.9);
-    background-color: #fdb02c;
+    background-color: #FFC233;
     font-size: 1.1rem; /* Ajuste do tamanho do texto */
     font-weight: 600;
+    border: 2px solid white;
 
 }
 
@@ -109,26 +104,26 @@ section, p , h1{
     
 }
 #card-fase1 {
-    background: linear-gradient(rgba(3, 8, 13, 0.85), rgba(3, 8, 13, 0.99) 80%), url("../imgs/autoconhecimento.jpg"); /* Imagem de fundo */
+    background: linear-gradient(rgba(0, 1, 13, 0.85), rgba(0, 1, 13, 0.99) 80%), url("../imgs/autoconhecimento.jpg"); /* Imagem de fundo */
     background-size: cover; /* Cobrir todo o card */
     background-position: center; /* Centralizar a imagem */
     background-repeat: no-repeat; /* Evitar repetição */
     position: relative;}
 
 #card-fase2 {
-    background: linear-gradient(rgba(3, 8, 13, 0.85), rgba(3, 8, 13, 0.99) 80%), url("../imgs/planejamento.jpg"); /* Imagem de fundo */
+    background: linear-gradient(rgba(0, 1, 13, 0.85), rgba(0, 1, 13, 0.99) 80%), url("../imgs/planejamento.jpg"); /* Imagem de fundo */
     background-size: cover; /* Cobrir todo o card */
     background-position: center; /* Centralizar a imagem */
     background-repeat: no-repeat; /* Evitar repetição */
     position: relative;}
 #card-fase3 {
-    background: linear-gradient(rgba(3, 8, 13, 0.85), rgba(3, 8, 13, 0.99) 80%), url("../imgs/tempo.jpg"); /* Imagem de fundo */
+    background: linear-gradient(rgba(0, 1, 13, 0.85), rgba(0, 1, 13, 0.99) 80%), url("../imgs/tempo.jpg"); /* Imagem de fundo */
     background-size: cover; /* Cobrir todo o card */
     background-position: center; /* Centralizar a imagem */
     background-repeat: no-repeat; /* Evitar repetição */
     position: relative;}
 #card-fase4 {
-    background: linear-gradient(rgba(3, 8, 13, 0.85), rgba(3, 8, 13, 0.99) 80%), url("../imgs/acao.jpg"); /* Imagem de fundo */
+    background: linear-gradient(rgba(0, 1, 13, 0.85), rgba(0, 1, 13, 0.99) 80%), url("../imgs/acao.jpg"); /* Imagem de fundo */
     background-size: cover; /* Cobrir todo o card */
     background-position: center; /* Centralizar a imagem */
     background-repeat: no-repeat; /* Evitar repetição */
